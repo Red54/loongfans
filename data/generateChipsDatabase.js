@@ -8,6 +8,8 @@ import { dirname, basename, extname } from 'path'
 import { type } from "os"
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(fileURLToPath(import.meta.url))
+console.error(__filename, __dirname)
+process.exit(1)
 
 const chips = {
     cpu: {},
